@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+}
+
+
+.card {
+    display: flex;
+    position: relative;
+    width: 500px;
+    height: 800px;
+    background: white;
+    border: 3px solid black;
+    border-radius:15px;
+    justify-content: space-between;
+}
+
+.top-symbol {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: red;
+    top: 100px;
+    left: 20px;
+    transform: rotate(45deg);
+}
+
+.top-symbol::before {
+    content: "";
+    position: absolute;
+    background: red;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    border-radius: 50%;
+}
+
+
+.top-symbol::after {
+    content: "";
+    position: absolute;
+    background: red;
+    width: 40px;
+    height: 40px;
+    right: 20px;
+    border-radius: 50%;
+}
+
+.letter-top {
+    position: absolute;
+    font-size: 70px;
+    left: 15px;
+    color: red;
+}
+
+
+.middle-symbol {
+    position: absolute;
+    left: 40%;
+    background: red;
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    transform: rotate(45deg);
+}
+
+.middle-symbol::before {
+    content: "";
+    position: absolute;
+    background: red;
+    width: 100px;
+    height: 100px;
+    bottom: 50px;
+    border-radius: 50%;
+}
+.middle-symbol::after {
+    content: "";
+    position: absolute;
+    background: red;
+    width: 100px;
+    height: 100px;
+    right: 50px;
+    border-radius: 50%;
+}
+
+.bottom-symbol {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: red;
+    bottom: 100px;
+    right: 20px;
+    transform: rotate(225deg);
+}
+
+.bottom-symbol::before {
+    content: "";
+    position: absolute;
+    background: red;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    border-radius: 50%;
+}
+
+
+.bottom-symbol::after {
+    content: "";
+    position: absolute;
+    background: red;
+    width: 40px;
+    height: 40px;
+    right: 20px;
+    border-radius: 50%;
+} 
+
+
+.letter-bottom {
+    position: absolute;
+    font-size: 70px;
+    right: 15px;
+    top: 720px;
+    color: red;
+    transform: rotate(180deg);
+}
